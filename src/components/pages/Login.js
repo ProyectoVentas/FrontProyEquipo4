@@ -42,8 +42,8 @@ const Login = ({ history }) => {
       localStorage.setItem("authToken", data.token);
 
       history.push("/home");
-    } catch (error) {
-      setError(error.response.data.error);
+    } catch {
+      setError(error);
       setTimeout(() => {
         setError("");
       }, 5000);
