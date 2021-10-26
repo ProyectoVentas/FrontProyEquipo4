@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
+axios.defaults.withCredentials = true;
 import '../css/main.css'
 import '../css/formatoHome.css'
 import '../plugins/fontawesome-free/css/all.min.css'
