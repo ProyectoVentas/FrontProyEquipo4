@@ -29,7 +29,7 @@ const Home = ({history}) => {
         console.log(homeData)
       } catch (error) {
         localStorage.removeItem("authToken");
-        setError("You are not authorized please login");
+        setError("You are not authorized please login or register");
       }
     };
 
